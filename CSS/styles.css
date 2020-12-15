@@ -1,0 +1,119 @@
+footer {
+  width: 100%;
+  background-color: #004040;
+  text-align: center;
+  padding-bottom: 120px;
+  padding-top: 90px; }
+  footer h2 {
+    color: #fff; }
+  footer h3 {
+    color: #fff; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: Arial;
+  margin: 0; }
+
+header {
+  height: 220px;
+  padding: 1em;
+  text-align: center; }
+  header h1 {
+    font-size: 45px;
+    color: #004040;
+    font-family: cursive; }
+  header hr {
+    width: 40%;
+    margin: auto; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1%; }
+
+aside {
+  flex: 30%;
+  padding: 20px;
+  text-align: center; }
+  aside h1 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    color: #004040;
+    font-family: cursive; }
+
+main {
+  flex: 70%;
+  padding: 1%;
+  padding-bottom: 50px;
+  text-align: center; }
+  main h1 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    color: #004040;
+    font-family: cursive; }
+
+img {
+  border-radius: 8px; }
+
+h3 {
+  color: #004040; }
+
+.keimg {
+  padding-left: 20%;
+  padding-right: 20%; }
+
+@supports (object-fit: cover) {
+  .keimg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); } }
+iframe {
+  width: 96%;
+  height: 620px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 28px;
+  border-radius: 18px; }
+
+@media screen and (max-width: 1200px) {
+  iframe {
+    width: 96%;
+    height: 430px; }
+
+  .keimg {
+    padding-left: 10%;
+    padding-right: 10%; } }
+/*Par ancho de pantalla menor de 900px se coloca una columna debajo de otra, en vez de dos */
+@media screen and (max-width: 900px) {
+  .row {
+    flex-direction: column; }
+
+  iframe {
+    height: 420px; }
+
+  .keimg {
+    padding-left: 20%;
+    padding-right: 20%; }
+
+  footer {
+    margin-top: 80px; } }
+@media screen and (max-width: 700px) {
+  iframe {
+    height: 320px; }
+
+  .keimg {
+    padding-left: 10%;
+    padding-right: 10%; } }
+@media screen and (max-width: 450px) {
+  iframe {
+    height: 280px; }
+
+  .keimg {
+    padding-left: 5%;
+    padding-right: 5%; } }
+
+/*# sourceMappingURL=styles.css.map */
